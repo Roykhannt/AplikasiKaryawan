@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         binding.btnClose.setOnClickListener {
             finish()
         }
+        binding.btnTes2.setOnClickListener {
+            val intent = Intent(this, TestRepoActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onResume() {
